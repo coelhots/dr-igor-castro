@@ -9,13 +9,14 @@ const LogoJanela = styled(Typography)({
 const Header = () =>{
   return (
     <Box>
-      <Box sx={{position: "relative"}}>
-        <CardMedia sx={{filter: "brightness(35%)"}}
+      <Box sx={{position: "relative", height: "calc(100vh - 56px)"}}>
+        <CardMedia sx={{filter: "brightness(35%)", height:"100%", objectFit: "cover"}}
               component="video"
+              playsInline
               autoPlay
               loop
               muted
-              src="/pexels-ron-lach-7584602.mp4"
+              src="/video.mp4"
               />
         <Box sx={{
         display: "flex",
@@ -30,7 +31,7 @@ const Header = () =>{
       }}>
           <Box sx={{ display: "flex", alignItems: "center",justifyContent: "center"}}>
             <img alt="Logo I de Igor C de Castro" src="/logo-sem-nome.png" width="120px" height="120px"/>
-            <Typography sx={{fontFamily: "'Quicksand', sans-serif"}}>Dr. Igor Castro</Typography>
+            <Typography sx={{fontFamily: "'Quicksand', sans-serif", color: "#CFCFCF"}} variant="h5">Dr. Igor Castro</Typography>
           </Box>
         </Box>
       </Box>
