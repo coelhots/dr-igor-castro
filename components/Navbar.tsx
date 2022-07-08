@@ -33,7 +33,7 @@ const Navbar = () => {
           <IconButton>
             <Box sx={{ display: "flex", alignItems: "center",justifyContent: "center" }}>
             <img alt="Logo I de Igor C de Castro" src="/logo-sem-nome.png" width="50px" height="50px"/>
-              <Typography sx={{fontFamily: "'Quicksand', sans-serif", color: "#CFCFCF"}}>Dr. Igor Castro</Typography>
+              <Typography sx={{ fontSize:"1.125rem", color: "#CFCFCF" }}>Dr. Igor Castro</Typography>
             </Box>
 
           </IconButton>
