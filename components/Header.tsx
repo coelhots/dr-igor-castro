@@ -29,6 +29,7 @@ const Header = () => {
       <Box sx={{ position: "relative", height: "calc(100vh - 56px)" }}>
         <CardMedia
           sx={{ filter: "brightness(35%)", height: "100%", objectFit: "cover" }}
+          poster="/videoposter.jpg"
           component="video"
           playsInline
           autoPlay

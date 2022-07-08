@@ -8,12 +8,16 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import Link from "@mui/material/Link";
 import { styled } from "@mui/material/styles";
 
-const WhatsAppFab = styled(Fab)({
+const WhatsAppLink = styled(Link)({
+  zIndex: "999",
+  position: "fixed",
+  left: "5%",
+  bottom: "2.5%",
+});
+
+const WhastAppFab = styled(Fab)({
   color: "white",
   backgroundColor: "#25d366",
-  position: "fixed",
-  left: "5px",
-  bottom: "5px",
   "&:hover": {
     backgroundColor: "#25d366",
     color: "white",
@@ -37,16 +41,16 @@ const Home: NextPage = () => {
       </Head>
       <Navbar />
       <Hidden smUp>
-        <Link
+        <WhatsAppLink
           rel="noopener"
           underline="none"
           href="https://wa.me/5511981045189"
           target="_blank"
         >
-          <WhatsAppFab aria-label="WhatsApp">
+          <WhastAppFab aria-label="WhatsApp">
             <WhatsAppIcon />
-          </WhatsAppFab>
-        </Link>
+          </WhastAppFab>
+        </WhatsAppLink>
       </Hidden>
       <Header />
     </>
