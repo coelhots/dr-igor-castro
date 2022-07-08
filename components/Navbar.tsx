@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar, IconButton, Container, Box, CardMedia, Typography } from "@mui/material";
+import { AppBar, Container, Box, Typography, Hidden } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -20,8 +20,11 @@ const Wrapper = styled(Container)({
 const LinkConfig = styled(Link)({
   display: "flex",
   justifyContent: "center",
+  alignItems: "center",
   color: "#CFCFCF",
   fontFamily: "'Quicksand', sans-serif",
+  cursor: "pointer",
+  textDecoration: "none",
   fontSize: "1.125rem",
 });
 
@@ -30,30 +33,51 @@ const Navbar = () => {
     <>
       <CustomNavBar position="fixed">
         <Wrapper>
-          <IconButton>
-            <Box sx={{ display: "flex", alignItems: "center",justifyContent: "center" }}>
-            <img alt="Logo I de Igor C de Castro" src="/logo-sem-nome.png" width="50px" height="50px"/>
-              <Typography sx={{ fontSize:"1.125rem", color: "#CFCFCF" }}>Dr. Igor Castro</Typography>
-            </Box>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <LinkConfig rel="noopener" underline="none" href="/">
+              <img
+                alt="Logo I de Igor C de Castro"
+                src="/logo-sem-nome.png"
+                width="50px"
+                height="50px"
+              />
+              <Typography sx={{ fontSize: "1.125rem", color: "#CFCFCF" }}>
+                Dr. Igor Castro
+              </Typography>
+            </LinkConfig>
+          </Box>
 
-          </IconButton>
-
-          <IconButton>
-            <LinkConfig rel="noopener" underline="none" href="https://www.instagram.com/dr.igorcastro/" target="_blank">
+          <Hidden smDown>
+            <LinkConfig
+              rel="noopener"
+              underline="none"
+              href="https://www.instagram.com/dr.igorcastro/"
+              target="_blank"
+            >
               <InstagramIcon sx={{ color: "CFCFCF" }} />
             </LinkConfig>
-          </IconButton>
+          </Hidden>
 
-          <IconButton>
-            <LinkConfig rel="noopener" underline="none" href="https://wa.me/5511981045189" target="_blank">
+          <Hidden smDown>
+            <LinkConfig
+              rel="noopener"
+              underline="none"
+              href="https://wa.me/5511981045189"
+              target="_blank"
+            >
               <WhatsAppIcon sx={{ mr: 0.5 }} />
               Entre em contato
             </LinkConfig>
-          </IconButton>
-
+          </Hidden>
         </Wrapper>
       </CustomNavBar>
-      <Box mb="56px"/>
+      <Box mb="56px" />
     </>
   );
 };
