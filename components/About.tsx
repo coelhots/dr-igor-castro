@@ -8,6 +8,7 @@ const AboutBox = styled(Box)(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
   flexDirection: "row",
+  alignItems: "center",
   [theme.breakpoints.down("sm")]: {
     flexDirection: "column",
   },
