@@ -1,6 +1,7 @@
 import { CardMedia, Typography, Box } from "@mui/material";
 import React from "react";
 import { styled } from "@mui/material/styles";
+import Image from "next/image";
 
 const BoxLogo = styled(Box)(({ theme }) => ({
   display: "flex",
@@ -39,7 +40,7 @@ const Header = () => {
         />
         <AbsoluteLogo>
           <BoxLogo>
-            <img
+            <Image
               alt="Logo I de Igor C de Castro"
               src="/logo-sem-nome.png"
               width="220px"

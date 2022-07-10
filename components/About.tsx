@@ -50,7 +50,7 @@ const About = () => {
           width={433}
           height={577}
           alt="Foto do Dr Igor Castro"
-        ></Image>
+        />
       </AboutBox>
     </Container>
   );

@@ -4,6 +4,7 @@ import { styled } from "@mui/material/styles";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import Link from "@mui/material/Link";
+import Image from "next/image";
 
 const CustomNavBar = styled(AppBar)({
   height: "56px",
@@ -41,7 +42,7 @@ const Navbar = () => {
             }}
           >
             <LinkConfig rel="noopener" underline="none" href="/">
-              <img
+              <Image
                 alt="Logo I de Igor C de Castro"
                 src="/logo-sem-nome.png"
                 width="50px"
