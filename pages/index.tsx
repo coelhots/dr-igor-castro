@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
+import About from "../components/About";
 import Fab from "@mui/material/Fab";
 import { Hidden } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
@@ -53,6 +54,7 @@ const Home: NextPage = () => {
         </WhatsAppLink>
       </Hidden>
       <Header />
+      <About />
     </>
   );
 };

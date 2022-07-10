@@ -29,11 +29,11 @@ const Header = () => {
       <Box sx={{ position: "relative", height: "calc(100vh - 56px)" }}>
         <CardMedia
           sx={{ filter: "brightness(35%)", height: "100%", objectFit: "cover" }}
-          poster="/videoposter.jpg"
           component="video"
           playsInline
           autoPlay
           loop
+          preload="auto"
           muted
           src="/video.mp4"
         />
@@ -55,7 +55,7 @@ const Header = () => {
               </Typography>
               <Typography sx={{ color: "#CFCFCF" }} variant="subtitle2">
                 {" "}
-                CRM 179.023{" "}
+                CRM 179.023 | RQE 99.774{" "}
               </Typography>
             </Box>
           </BoxLogo>
