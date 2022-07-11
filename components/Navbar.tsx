@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const CustomNavBar = styled(AppBar)({
   height: "56px",
-  backgroundColor: "#214087",
+  backgroundColor: "#08173B",
 });
 
 const Wrapper = styled(Container)({

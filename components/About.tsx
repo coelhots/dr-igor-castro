@@ -16,43 +16,54 @@ const AboutBox = styled(Box)(({ theme }) => ({
 
 const About = () => {
   return (
-    <Container
+    <Box
+      component="section"
       sx={{
         backgroundColor: "#214087",
       }}
     >
-      <AboutBox>
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            flexDirection: "column",
-            width: "300px",
-          }}
-        >
-          <Typography variant="subtitle1"> Cirurgião Plastico</Typography>
-          <Typography variant="h4"> Dr Igor Castro</Typography>
-          <Typography>
-            {" "}
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&apos;s standard dummy
-            text ever since the 1500s, when an unknown printer took a galley of
-            type and scrambled it to make a type specimen book. It has survived
-            not only five centuries, but also the leap into electronic
-            typesetting, remaining essentially unchanged. It was popularised in
-            the 1960s with the release of Letraset sheets containing Lorem Ipsum
-            passages, and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum.{" "}
-          </Typography>
-        </Box>
-        <Image
-          src="/fotoabout.png"
-          width={433}
-          height={577}
-          alt="Foto do Dr Igor Castro"
-        />
-      </AboutBox>
-    </Container>
+      <Container>
+        <AboutBox>
+          <Box
+            mt={["20px", "20px", "0px"]}
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              flexDirection: "column",
+              width: "300px",
+            }}
+          >
+            <Typography sx={{ color: "#CFCFCF" }} variant="subtitle1">
+              {" "}
+              Cirurgião Plastico
+            </Typography>
+            <Typography sx={{ color: "#CFCFCF" }} variant="h4">
+              {" "}
+              Dr Igor Castro
+            </Typography>
+            <Typography sx={{ color: "#CFCFCF" }}>
+              {" "}
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry&apos;s standard dummy
+              text ever since the 1500s, when an unknown printer took a galley
+              of type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.{" "}
+            </Typography>
+          </Box>
+          <Image
+            src="/fotoabout.png"
+            width={433}
+            height={577}
+            alt="Foto do Dr Igor Castro"
+          />
+        </AboutBox>
+      </Container>
+    </Box>
   );
 };
 
