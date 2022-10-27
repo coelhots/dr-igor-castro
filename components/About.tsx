@@ -19,7 +19,7 @@ const About = () => {
     <Box
       component="section"
       sx={{
-        backgroundColor: "#214087",
+        backgroundColor: "#white",
       }}
     >
       <Container>
@@ -30,37 +30,52 @@ const About = () => {
               display: "flex",
               alignItems: "center",
               flexDirection: "column",
-              width: "300px",
+              width: "50%",
             }}
           >
-            <Typography sx={{ color: "#CFCFCF" }} variant="subtitle1">
+            <Typography sx={{ color: "#08173B" }} variant="subtitle1">
               {" "}
               Cirurgião Plastico
             </Typography>
-            <Typography sx={{ color: "#CFCFCF" }} variant="h4">
+            <Typography sx={{ color: "#08173B" }} variant="h4">
               {" "}
               Dr Igor Castro
             </Typography>
-            <Typography sx={{ color: "#CFCFCF" }}>
+            <Typography sx={{ color: "#08173B" }}>
               {" "}
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry&apos;s standard dummy
-              text ever since the 1500s, when an unknown printer took a galley
-              of type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.{" "}
+              Formado pela prestigiada Universidade de Brasília - UnB, ingressou
+              em 2016 na residência no Hospital das Clínicas da Faculdade de
+              medicina da USP onde realizou sua especialização primeiro como
+              Cirurgião Geral e em seguida com Cirurgião Plástico no maior
+              complexo hospitalar da América Latina. Durante a residência
+              completou ainda Fellowship em Lipoaspiração HD na Clínica Schmitt
+              em Santa Catarina (SC) Após residência de cirurgia plástica,
+              realizou mais uma subespecialização com Fellowship de Cirurgia de
+              Contorno Corporal Pós-bariátrica também no Hospital das Clínicas
+              da Faculdade de medicina da USP. Membro da Sociedade Brasileira de
+              Cirurgia Plástica e possui título de especialista pela Associação
+              Médica Brasileira (AMB) e pela Sociedade Brasileira de Cirurgia
+              Plástica (SBCP). É também Membro do Conselho Regional de Medicina
+              de São Paulo desde 2016. Atualmente, tem sua prática clínica
+              fixada em São Paulo, onde atende pacientes de todo o Brasil.{" "}
             </Typography>
           </Box>
-          <Image
-            src="/fotoabout.png"
-            width={433}
-            height={577}
-            alt="Foto do Dr Igor Castro"
-          />
+          <Box
+            sx={{
+              display: "flex",
+              width: "50%",
+              height: "820px",
+              position: "relative",
+            }}
+          >
+            <Image
+              src="/aboutprofile.png"
+              layout="fill"
+              height={820}
+              width={528}
+              alt="Foto do Dr Igor Castro"
+            />
+          </Box>
         </AboutBox>
       </Container>
     </Box>
