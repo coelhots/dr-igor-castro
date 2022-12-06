@@ -29,7 +29,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Dr Igor Castro</title>
+        <title>Dr. Igor Castro</title>
         <meta name="description" content="" />
         <link rel="icon" type="image/x-icon" href="favicon.ico" />
 

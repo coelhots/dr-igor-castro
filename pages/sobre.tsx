@@ -7,6 +7,7 @@ import Fab from "@mui/material/Fab";
 import { Hidden } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import Link from "@mui/material/Link";
+import Head from "next/head";
 
 const WhatsAppLink = styled(Link)({
     zIndex: "999",
@@ -40,15 +41,27 @@ const AboutBox = styled(Box)(({ theme }) => ({
 export default function about() {
     return (
         <>
-            <Navbar />
-                <Box
-                component="section"
-                sx={{
-                    backgroundColor: "#white",
-                }}
-                >
-                <Container>
-                    <AboutBox>
+            <Head>
+            <title>Sobre | Dr. Igor Castro</title>
+            <meta name="description" content="" />
+            <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+            <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+            <link rel="preconnect" href="https://fonts.gstatic.com"></link>
+            <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
+            rel="stylesheet"
+            />
+            </Head>
+            <Navbar/>
+            <Box
+            component="section"
+            sx={{
+                backgroundColor: "#white",
+            }}
+            >
+            <Container>
+                <AboutBox>
                     <Box
                         mt={["20px", "20px", "0px"]}
                         sx={{
@@ -101,21 +114,21 @@ export default function about() {
                         alt="Foto do Dr Igor Castro"
                         />
                     </Box>
-                    </AboutBox>
-                </Container>
-                </Box>
-        <Hidden smUp>
-            <WhatsAppLink
-            rel="noopener"
-            underline="none"
-            href="https://wa.me/5511981045189"
-            target="_blank"
-            >
-            <WhastAppFab aria-label="WhatsApp">
-                <WhatsAppIcon />
-            </WhastAppFab>
-            </WhatsAppLink>
-        </Hidden>
+                </AboutBox>
+            </Container>
+            </Box>
+            <Hidden smUp>
+                <WhatsAppLink
+                rel="noopener"
+                underline="none"
+                href="https://wa.me/5511981045189"
+                target="_blank"
+                >
+                <WhastAppFab aria-label="WhatsApp">
+                    <WhatsAppIcon />
+                </WhastAppFab>
+                </WhatsAppLink>
+            </Hidden>
         </>
     )
 }
