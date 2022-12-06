@@ -3,9 +3,31 @@ import { Box, Container, Typography } from "@mui/material";
 import Image from "next/image";
 import { styled } from "@mui/material/styles";
 import Navbar from "../components/Navbar";
+import Fab from "@mui/material/Fab";
+import { Hidden } from "@mui/material";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import Link from "@mui/material/Link";
+
+const WhatsAppLink = styled(Link)({
+    zIndex: "999",
+    position: "fixed",
+    left: "5%",
+    bottom: "2.5%",
+  });
+  
+  const WhastAppFab = styled(Fab)({
+    color: "white",
+    backgroundColor: "#25d366",
+    "&:hover": {
+      backgroundColor: "#25d366",
+      color: "white",
+    },
+  });
 
 const AboutBox = styled(Box)(({ theme }) => ({
   width: "100%",
+  marginTop: "82px",
+  marginBottom: "26px",
   display: "flex",
   justifyContent: "center",
   flexDirection: "row",
@@ -74,16 +96,26 @@ export default function about() {
                         }}
                     >
                         <Image
-                        src="/aboutprofile.png"
+                        src="/aboutphoto.png"
                         layout="fill"
-                        height={820}
-                        width={528}
                         alt="Foto do Dr Igor Castro"
                         />
                     </Box>
                     </AboutBox>
                 </Container>
                 </Box>
+        <Hidden smUp>
+            <WhatsAppLink
+            rel="noopener"
+            underline="none"
+            href="https://wa.me/5511981045189"
+            target="_blank"
+            >
+            <WhastAppFab aria-label="WhatsApp">
+                <WhatsAppIcon />
+            </WhastAppFab>
+            </WhatsAppLink>
+        </Hidden>
         </>
     )
 }

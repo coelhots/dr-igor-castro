@@ -80,16 +80,14 @@ const About = () => {
           <Box
             sx={{
               display: "flex",
-              height: "700px",
               width: "35%",
+              height: "700px",
               position: "relative",
             }}
           >
             <Image
-              src="/aboutprofile.png"
+              src="/aboutphoto.png"
               layout="fill"
-              height={820}
-              width={528}
               alt="Foto do Dr Igor Castro"
             />
           </Box>
