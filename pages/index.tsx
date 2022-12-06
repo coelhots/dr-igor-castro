@@ -54,7 +54,7 @@ const Home: NextPage = () => {
         </WhatsAppLink>
       </Hidden>
       <Header />
-      {/* <About /> */}
+      <About />
     </>
   );
 };

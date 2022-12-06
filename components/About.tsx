@@ -2,9 +2,12 @@ import React from "react";
 import { Box, Container, Typography } from "@mui/material";
 import Image from "next/image";
 import { styled } from "@mui/material/styles";
+import Button from '@mui/material/Button';
 
 const AboutBox = styled(Box)(({ theme }) => ({
   width: "100%",
+  marginTop: "26px",
+  marginBottom: "26px",
   display: "flex",
   justifyContent: "center",
   flexDirection: "row",
@@ -13,6 +16,26 @@ const AboutBox = styled(Box)(({ theme }) => ({
     flexDirection: "column",
   },
 }));
+
+const ButtonSobreMim = styled(Button)({
+  marginTop: "16px",
+  backgroundColor: "#08173B",
+  marginRight: "16px",
+  fontWeight: "700",
+  '&:hover': {
+    backgroundColor: '#052C87',
+    boxShadow: 'none',}
+});
+
+const ButtonAgendarConsulta = styled(Button)({
+  marginTop: "16px",
+  backgroundColor: "#CFCFCF",
+  color: "#08173B",
+  fontWeight: "700",
+  '&:hover': {
+    backgroundColor: '#4F4F4F',
+    boxShadow: 'none',}
+});
 
 const About = () => {
   return (
@@ -39,7 +62,7 @@ const About = () => {
             </Typography>
             <Typography sx={{ color: "#08173B" }} variant="h4">
               {" "}
-              Dr Igor Castro
+              Dr. Igor Castro
             </Typography>
             <Typography sx={{ color: "#08173B" }}>
               {" "}
@@ -47,24 +70,18 @@ const About = () => {
               em 2016 na residência no Hospital das Clínicas da Faculdade de
               medicina da USP onde realizou sua especialização primeiro como
               Cirurgião Geral e em seguida com Cirurgião Plástico no maior
-              complexo hospitalar da América Latina. Durante a residência
-              completou ainda Fellowship em Lipoaspiração HD na Clínica Schmitt
-              em Santa Catarina (SC) Após residência de cirurgia plástica,
-              realizou mais uma subespecialização com Fellowship de Cirurgia de
-              Contorno Corporal Pós-bariátrica também no Hospital das Clínicas
-              da Faculdade de medicina da USP. Membro da Sociedade Brasileira de
-              Cirurgia Plástica e possui título de especialista pela Associação
-              Médica Brasileira (AMB) e pela Sociedade Brasileira de Cirurgia
-              Plástica (SBCP). É também Membro do Conselho Regional de Medicina
-              de São Paulo desde 2016. Atualmente, tem sua prática clínica
-              fixada em São Paulo, onde atende pacientes de todo o Brasil.{" "}
+              complexo hospitalar da América Latina.{" "}
             </Typography>
+            <Box>
+              <ButtonSobreMim variant="contained" href="/sobre">Sobre Mim</ButtonSobreMim>
+              <ButtonAgendarConsulta variant="contained" href="https://wa.me/5511981045189">Agendar Consulta</ButtonAgendarConsulta>
+            </Box>
           </Box>
           <Box
             sx={{
               display: "flex",
-              width: "50%",
-              height: "820px",
+              height: "700px",
+              width: "35%",
               position: "relative",
             }}
           >
