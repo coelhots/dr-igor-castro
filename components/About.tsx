@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Container, Typography } from "@mui/material";
 import Image from "next/image";
 import { styled } from "@mui/material/styles";
-import Button from '@mui/material/Button';
+import Button from "@mui/material/Button";
 
 const AboutBox = styled(Box)(({ theme }) => ({
   width: "100%",
@@ -16,26 +16,6 @@ const AboutBox = styled(Box)(({ theme }) => ({
     flexDirection: "column",
   },
 }));
-
-const ButtonSobreMim = styled(Button)({
-  marginTop: "16px",
-  backgroundColor: "#08173B",
-  marginRight: "16px",
-  fontWeight: "700",
-  '&:hover': {
-    backgroundColor: '#052C87',
-    boxShadow: 'none',}
-});
-
-const ButtonAgendarConsulta = styled(Button)({
-  marginTop: "16px",
-  backgroundColor: "#CFCFCF",
-  color: "#08173B",
-  fontWeight: "700",
-  '&:hover': {
-    backgroundColor: '#4F4F4F',
-    boxShadow: 'none',}
-});
 
 const About = () => {
   return (
@@ -56,11 +36,11 @@ const About = () => {
               width: "50%",
             }}
           >
-            <Typography sx={{ color: "#08173B" }} variant="subtitle1">
+            <Typography sx={{ color: "#08173B" }} variant="h5">
               {" "}
-              Cirurgião Plastico
+              Cirurgião Plástico
             </Typography>
-            <Typography sx={{ color: "#08173B" }} variant="h4">
+            <Typography sx={{ color: "#08173B", marginBottom: "16px" }} variant="h3">
               {" "}
               Dr. Igor Castro
             </Typography>
@@ -72,10 +52,30 @@ const About = () => {
               Cirurgião Geral e em seguida com Cirurgião Plástico no maior
               complexo hospitalar da América Latina.{" "}
             </Typography>
-            <Box>
-              <ButtonSobreMim variant="contained" href="/sobre">Sobre Mim</ButtonSobreMim>
-              <ButtonAgendarConsulta variant="contained" href="https://wa.me/5511981045189">Agendar Consulta</ButtonAgendarConsulta>
-            </Box>
+            <br/>
+            <Typography sx={{ color: "#08173B" }}>
+              {" "}
+              Aprovado no título da Sociedade Brasileira de Cirurgia Plástica,
+              também ingressou no programa de Fellowship (pós graduação) em
+              Contorno Corporal e Cirurgia Pós Bariátrica (ICHC-USP/SP) onde
+              aprimorou diversas técnicas de reconstrução e aperfeiçoamento do
+              contorno corporal.{" "}
+            </Typography>
+            <br/>
+            <Typography sx={{ color: "#08173B" }}>
+              {" "}
+              É Membro da Sociedade Brasileira de Cirurgia Plástica e possui
+              título de especialista pela Associação Médica Brasileira (AMB) e
+              pela Sociedade Brasileira de Cirurgia Plástica (SBCP). É Membro do
+              Conselho Regional de Medicina de São Paulo desde 2016.{" "}
+            </Typography>
+            <br/>
+            <Typography sx={{ color: "#08173B" }}>
+              {" "}
+              Atualmente atua em São Paulo nos maiores hospitais da cidade, com
+              foco em cirurgias corporais estéticas e reconstrutoras de mama,
+              abdome, membros e face.{" "}
+            </Typography>
           </Box>
           <Box
             sx={{
