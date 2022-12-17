@@ -69,7 +69,7 @@ const Navbar = () => {
             <LinkConfig
               rel="noopener"
               underline="none"
-              href="https://wa.me/5511981045189"
+              href="https://wa.me/5511930976117"
               target="_blank"
             >
               <WhatsAppIcon sx={{ mr: 0.5 }} />

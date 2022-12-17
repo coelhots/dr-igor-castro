@@ -74,7 +74,7 @@ const About = () => {
               {" "}
               Atualmente atua em São Paulo nos maiores hospitais da cidade, com
               foco em cirurgias corporais estéticas e reconstrutoras de mama,
-              abdome, membros e face.{" "}
+              abdome, membros e face.{" "}
             </Typography>
           </Box>
           <Box
