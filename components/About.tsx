@@ -16,6 +16,11 @@ const AboutBox = styled(Box)(({ theme }) => ({
   },
 }));
 
+const StyleText = styled(Typography) (({ theme }) => ({
+  color: "#08173B", 
+  fontWeight: "600"
+}));
+
 const StyleImg = styled(Box) (({ theme }) => ({
   [theme.breakpoints.up("md")]: {
     display: "flex",
@@ -56,46 +61,46 @@ const About = () => {
               width: "50%",
             }}
           >
-            <Typography sx={{ color: "#08173B" }} variant="h5">
+            <StyleText variant="h5">
               {" "}
               Cirurgião Plástico
-            </Typography>
-            <Typography sx={{ color: "#08173B", marginBottom: "16px" }} variant="h3">
+            </StyleText>
+            <StyleText sx={{ marginBottom: "16px" }} variant="h3">
               {" "}
               Dr. Igor Castro
-            </Typography>
-            <Typography sx={{ color: "#08173B" }}>
+            </StyleText>
+            <StyleText>
               {" "}
               Formado pela prestigiada Universidade de Brasília - UnB, ingressou
               em 2016 na residência no Hospital das Clínicas da Faculdade de
               medicina da USP onde realizou sua especialização primeiro como
               Cirurgião Geral e em seguida com Cirurgião Plástico no maior
               complexo hospitalar da América Latina.{" "}
-            </Typography>
+            </StyleText>
             <br/>
-            <Typography sx={{ color: "#08173B" }}>
+            <StyleText>
               {" "}
               Aprovado no título da Sociedade Brasileira de Cirurgia Plástica,
               também ingressou no programa de Fellowship (pós graduação) em
               Contorno Corporal e Cirurgia Pós Bariátrica (ICHC-USP/SP) onde
               aprimorou diversas técnicas de reconstrução e aperfeiçoamento do
               contorno corporal.{" "}
-            </Typography>
+            </StyleText>
             <br/>
-            <Typography sx={{ color: "#08173B" }}>
+            <StyleText>
               {" "}
               É Membro da Sociedade Brasileira de Cirurgia Plástica e possui
               título de especialista pela Associação Médica Brasileira (AMB) e
               pela Sociedade Brasileira de Cirurgia Plástica (SBCP). É Membro do
               Conselho Regional de Medicina de São Paulo desde 2016.{" "}
-            </Typography>
+            </StyleText>
             <br/>
-            <Typography sx={{ color: "#08173B" }}>
+            <StyleText>
               {" "}
               Atualmente atua em São Paulo nos maiores hospitais da cidade, com
               foco em cirurgias corporais estéticas e reconstrutoras de mama,
               abdome, membros e face.{" "}
-            </Typography>
+            </StyleText>
           </Box>
           <StyleImg>
           <Image
