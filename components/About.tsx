@@ -1,8 +1,7 @@
 import React from "react";
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Container, Hidden, Typography } from "@mui/material";
 import Image from "next/image";
 import { styled } from "@mui/material/styles";
-import Button from "@mui/material/Button";
 
 const AboutBox = styled(Box)(({ theme }) => ({
   width: "100%",
@@ -77,20 +76,38 @@ const About = () => {
               abdome, membros e face.{" "}
             </Typography>
           </Box>
-          <Box
-            sx={{
-              display: "flex",
-              width: "80%",
-              height: "700px",
-              position: "relative",
-            }}
-          >
-            <Image
-              src="/aboutphoto.png"
-              layout="fill"
-              alt="Foto do Dr Igor Castro"
-            />
-          </Box>
+          <Hidden smUp>
+            <Box
+              sx={{
+                display: "flex",
+                width: "80%",
+                height: "600px",
+                position: "relative",
+              }}
+            >
+              <Image
+                src="/aboutphoto.png"
+                layout="fill"
+                alt="Foto do Dr Igor Castro"
+              />
+            </Box>
+          </Hidden>
+          <Hidden smDown>
+            <Box
+              sx={{
+                display: "flex",
+                width: "35%",
+                height: "700px",
+                position: "relative",
+              }}
+            >
+              <Image
+                src="/aboutphoto.png"
+                layout="fill"
+                alt="Foto do Dr Igor Castro"
+              />
+            </Box>
+          </Hidden>
         </AboutBox>
       </Container>
     </Box>
