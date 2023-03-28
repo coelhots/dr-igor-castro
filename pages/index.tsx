@@ -31,7 +31,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Dr. Igor Castro</title>
         <meta name="description" content="" />
-        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="favicon.png" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
         <link rel="preconnect" href="https://fonts.gstatic.com"></link>
