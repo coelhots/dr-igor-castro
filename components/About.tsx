@@ -16,6 +16,27 @@ const AboutBox = styled(Box)(({ theme }) => ({
   },
 }));
 
+const StyleImg = styled(Box) (({ theme }) => ({
+  [theme.breakpoints.up("md")]: {
+    display: "flex",
+    width: "35%",
+    height: "700px",
+    position: "relative",
+  },
+  [theme.breakpoints.down("md")]: {
+    display: "flex",
+    width: "45%",
+    height: "600px",
+    position: "relative",
+  },
+  [theme.breakpoints.down("sm")]: {
+    display: "flex",
+    width: "60%",
+    height: "450px",
+    position: "relative",
+  },
+}))
+
 const About = () => {
   return (
     <Box
@@ -76,38 +97,13 @@ const About = () => {
               abdome, membros e face.{" "}
             </Typography>
           </Box>
-          <Hidden smUp>
-            <Box
-              sx={{
-                display: "flex",
-                width: "80%",
-                height: "600px",
-                position: "relative",
-              }}
-            >
-              <Image
+          <StyleImg>
+          <Image
                 src="/aboutphoto.png"
                 layout="fill"
                 alt="Foto do Dr Igor Castro"
               />
-            </Box>
-          </Hidden>
-          <Hidden smDown>
-            <Box
-              sx={{
-                display: "flex",
-                width: "35%",
-                height: "700px",
-                position: "relative",
-              }}
-            >
-              <Image
-                src="/aboutphoto.png"
-                layout="fill"
-                alt="Foto do Dr Igor Castro"
-              />
-            </Box>
-          </Hidden>
+          </StyleImg>
         </AboutBox>
       </Container>
     </Box>
