@@ -16,29 +16,35 @@ const AboutBox = styled(Box)(({ theme }) => ({
   },
 }));
 
+const MarginAboutBox = styled(Box) (({ theme }) => ({
+  display: "flex",
+  alignItems: "center",
+  flexDirection: "column",
+  width: "50%",
+  [theme.breakpoints.down("sm")]: {
+  width: "90%",
+  },
+}));
+
 const StyleText = styled(Typography) (({ theme }) => ({
   color: "#08173B", 
   fontWeight: "600"
 }));
 
 const StyleImg = styled(Box) (({ theme }) => ({
+  display: "flex",
+  position: "relative",
   [theme.breakpoints.up("md")]: {
-    display: "flex",
     width: "35%",
     height: "700px",
-    position: "relative",
   },
   [theme.breakpoints.down("md")]: {
-    display: "flex",
     width: "45%",
     height: "600px",
-    position: "relative",
   },
   [theme.breakpoints.down("sm")]: {
-    display: "flex",
     width: "60%",
     height: "450px",
-    position: "relative",
   },
 }))
 
@@ -52,14 +58,8 @@ const About = () => {
     >
       <Container>
         <AboutBox>
-          <Box
+          <MarginAboutBox
             mt={["20px", "20px", "0px"]}
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              flexDirection: "column",
-              width: "50%",
-            }}
           >
             <StyleText variant="h5">
               {" "}
@@ -101,7 +101,7 @@ const About = () => {
               foco em cirurgias corporais estéticas e reconstrutoras de mama,
               abdome, membros e face.{" "}
             </StyleText>
-          </Box>
+          </MarginAboutBox>
           <StyleImg>
           <Image
                 src="/aboutphoto.png"
