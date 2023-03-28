@@ -80,7 +80,7 @@ const About = () => {
           <Box
             sx={{
               display: "flex",
-              width: "35%",
+              width: "80%",
               height: "700px",
               position: "relative",
             }}
