@@ -38,7 +38,7 @@ const StyleImg = styled(Box) (({ theme }) => ({
   width: "100%",
   marginTop: "20px",
   [theme.breakpoints.up("md")]: {
-    height: "700px",
+    height: "750px",
   },
   [theme.breakpoints.down("md")]: {
     height: "600px",
