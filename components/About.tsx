@@ -28,7 +28,8 @@ const MarginAboutBox = styled(Box) (({ theme }) => ({
 
 const StyleText = styled(Typography) (({ theme }) => ({
   color: "#08173B", 
-  fontWeight: "600"
+  fontWeight: "600",
+  textAlign: "justify",
 }));
 
 const StyleImg = styled(Box) (({ theme }) => ({
@@ -60,11 +61,11 @@ const About = () => {
           <MarginAboutBox
             mt={["20px", "20px", "0px"]}
           >
-            <StyleText variant="h5">
+            <StyleText  variant="h5">
               {" "}
               Cirurgião Plástico
             </StyleText>
-            <StyleText sx={{ marginBottom: "16px" }} variant="h3">
+            <StyleText sx={{ textAlign: "center" , marginBottom: "16px" }} variant="h3">
               {" "}
               Dr. Igor Castro
             </StyleText>
