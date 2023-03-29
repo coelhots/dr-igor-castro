@@ -5,9 +5,9 @@ import { styled } from "@mui/material/styles";
 
 const AboutBox = styled(Box)(({ theme }) => ({
   width: "100%",
-  marginTop: "26px",
-  marginBottom: "26px",
   display: "flex",
+  paddingBottom: "26px",
+  paddingTop: "26px",
   justifyContent: "center",
   flexDirection: "row",
   alignItems: "center",
@@ -52,7 +52,7 @@ const About = () => {
     <Box
       component="section"
       sx={{
-        backgroundColor: "#white",
+        backgroundColor: "#FAFAFA",
       }}
     >
       <Container>
