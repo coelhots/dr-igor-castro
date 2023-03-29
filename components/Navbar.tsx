@@ -41,7 +41,8 @@ const Navbar = () => {
               justifyContent: "center",
             }}
           >
-            <LinkConfig rel="noopener" underline="none" href="/">
+            <Box onClick={() => window.scrollTo( {behavior: "smooth", top: 0} )}>
+            <LinkConfig rel="noopener" underline="none">
               <Image
                 alt="Logo I de Igor C de Castro"
                 src="/logo-sem-nome.png"
@@ -51,7 +52,8 @@ const Navbar = () => {
               <Typography sx={{ fontSize: "1.125rem", color: "#CFCFCF" }}>
                 Dr. Igor Castro
               </Typography>
-            </LinkConfig>
+              </LinkConfig>
+              </Box>
           </Box>
 
           <Hidden smDown>

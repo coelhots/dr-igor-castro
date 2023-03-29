@@ -34,16 +34,15 @@ const StyleText = styled(Typography) (({ theme }) => ({
 const StyleImg = styled(Box) (({ theme }) => ({
   display: "flex",
   position: "relative",
+  width: "100%",
+  marginTop: "20px",
   [theme.breakpoints.up("md")]: {
-    width: "35%",
     height: "700px",
   },
   [theme.breakpoints.down("md")]: {
-    width: "45%",
     height: "600px",
   },
   [theme.breakpoints.down("sm")]: {
-    width: "60%",
     height: "450px",
   },
 }))
@@ -107,6 +106,7 @@ const About = () => {
                 src="/aboutphoto.png"
                 layout="fill"
                 alt="Foto do Dr Igor Castro"
+                objectFit="contain"
               />
           </StyleImg>
         </AboutBox>
