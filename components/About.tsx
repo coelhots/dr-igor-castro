@@ -39,6 +39,7 @@ const LogoBox = styled(Box) (({theme}) => ({
   flexDirection: "column",
   justifyContent: "space-evenly",
   marginLeft: "30px",
+  gap: "20px",
   [theme.breakpoints.down("sm")]: {
     marginTop: "20px",
     marginLeft: "10px",
