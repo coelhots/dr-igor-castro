@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, Hidden, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import Image from "next/image";
 import { styled } from "@mui/material/styles";
 
@@ -9,8 +9,8 @@ const AboutBox = styled(Box)(({ theme }) => ({
   paddingBottom: "26px",
   paddingTop: "26px",
   justifyContent: "center",
-  flexDirection: "row",
   alignItems: "center",
+  flexDirection: "row",
   [theme.breakpoints.down("sm")]: {
     flexDirection: "column",
   },
@@ -20,16 +20,35 @@ const MarginAboutBox = styled(Box) (({ theme }) => ({
   display: "flex",
   alignItems: "center",
   flexDirection: "column",
-  width: "50%",
+  justifyContent: "center",
+  width: "100%",
   [theme.breakpoints.down("sm")]: {
   width: "90%",
   },
 }));
 
-const StyleText = styled(Typography) (({ theme }) => ({
+const StyleText = styled(Typography) (({}) => ({
   color: "#08173B", 
-  fontWeight: "600",
+  fontWeight: "500",
   textAlign: "justify",
+}));
+
+const LogoBox = styled(Box) (({theme}) => ({
+  display: "flex",
+  width: "30%",
+  flexDirection: "column",
+  justifyContent: "space-evenly",
+  marginLeft: "30px",
+  [theme.breakpoints.down("sm")]: {
+    marginTop: "20px",
+    marginLeft: "10px",
+    marginRight: "10px",
+    flexDirection: "row",
+    justifyContent:"space-evenly",
+    width: "90%",
+    height: "40px",
+    gap: "15px"
+  },
 }));
 
 const StyleImg = styled(Box) (({ theme }) => ({
@@ -103,13 +122,45 @@ const About = () => {
             </StyleText>
           </MarginAboutBox>
           <StyleImg>
-          <Image
-                src="/aboutphoto.png"
-                layout="fill"
-                alt="Foto do Dr Igor Castro"
-                objectFit="contain"
-              />
+            <Image
+              src="/aboutphoto.png"
+              layout="fill"
+              alt="Foto do Dr Igor Castro"
+              objectFit="contain"
+            />
           </StyleImg>
+          <LogoBox>
+              <Image
+                src="/logos/unbLogo.png"
+                alt="UNB"
+                width="100%"
+                height="100%"
+              />
+              <Image
+                src="/logos/uspLogo.png"
+                alt="USP"
+                width="100%"
+                height="100%"
+              />
+              <Image
+                src="/logos/hcLogo.png"
+                alt="Hospital das Clínicas"
+                width="100%"
+                height="100%"
+              />
+              <Image
+                src="/logos/sbcpLogo.png"
+                alt="SBCP"
+                width="100%"
+                height="100%"
+              />
+              <Image
+                src="/logos/ambLogo.png"
+                alt="AMB"
+                width="100%"
+                height="100%"
+              />
+          </LogoBox>
         </AboutBox>
       </Container>
     </Box>
